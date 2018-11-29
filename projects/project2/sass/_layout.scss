@@ -1,0 +1,76 @@
+.header {
+    max-width: 118rem;
+    margin: 0 auto;
+
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media only screen and (max-width: $bp-900) {
+        flex-direction: column;
+        justify-content: space-around;
+        height: 20rem;
+    }
+}
+
+.classes-container {
+    background-image: url(../img/pattern.png);
+    padding: 5rem 0;
+}
+
+.classes {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    max-width: 120rem;
+    margin-top: 10rem;
+    flex-wrap: wrap;
+    
+}
+
+.why {
+    background-color: $color-primary-green-light;
+    padding: 5rem 0;
+}
+
+.reasons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 117rem;
+    margin: 0 auto;
+}
+
+.pricing {
+
+    padding: 6rem 0;
+}
+
+.footer--container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 117rem;
+    margin: 0 auto;
+    padding: 1rem;
+
+    @media only screen and (max-width: $bp-900) {
+        flex-direction: column;
+        
+    }
+}
+
+footer {
+
+    background-color: $color-text;
+    padding: 6rem 0;
+    color: $color-white;
+    font-size: 1.3rem;
+
+    @media only screen and (max-width: $bp-900) {
+        padding-bottom: 1rem;
+    }
+}

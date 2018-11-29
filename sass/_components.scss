@@ -1,0 +1,512 @@
+
+
+.mark {
+    position: relative;
+   
+    &__black {
+        width: 1rem;
+        height: 12rem;
+        background-color: $color-black;
+
+        @media only screen and (max-width:$bp-900) {
+            width: .8rem;
+            height: 10rem;
+        }
+    }
+
+    &__white {
+        width: 12rem;
+        height: 1rem;
+        background-color: $color-white;
+        position: absolute;
+        top: 2rem;
+        left: -2rem;
+
+        @media only screen and (max-width:$bp-900) {
+            width: 10rem;
+            height: .8rem;
+        }
+    }
+
+    &__red {
+        width: 12rem;
+        height: 1rem;
+        background-color: $color-red;
+        position: absolute;
+        top: 2rem;
+        left: -2rem;
+
+        @media only screen and (max-width:$bp-900) {
+            width: 10rem;
+            height: .8rem;
+        }
+    }
+}
+
+.hero {
+
+
+   
+
+    &__content {
+        width: 70%;
+        position: absolute;
+
+        top: 50%;
+        left: 50%;
+       transform: translate(-50%, -50%);
+        display: flex;
+        flex-direction: column;
+
+
+        
+        @media only screen and (max-width:$bp-600) {
+            width: 84%;
+            position: absolute;
+            top: 49%;
+            left: 50%;
+        }
+
+
+    }
+
+    &__title {
+        font-size: 3.6rem;
+        font-weight: 400;
+        position: absolute;
+        margin: 8rem 7rem;
+
+        @media only screen and (max-width:$bp-1000) {
+            font-size: 3rem;
+        }
+
+        @media only screen and (max-width:$bp-600) {
+            margin: 8rem 4rem;
+            font-size: 2.5rem;
+        }
+    }
+
+    &__desc {
+        font-size: 1.4rem;
+        margin-left: 7rem;
+        margin-top: 6rem;
+        font-weight: 400;
+        line-height: 1.8;
+
+        @media only screen and (max-width:$bp-1000) {
+            font-size: 1.2rem;
+        }
+
+        @media only screen and (max-width:$bp-900) {
+            padding-right: 2rem;
+        }
+
+        @media only screen and (max-width:$bp-600) {
+            margin-top: 7rem;
+            font-size: 1.35rem;
+            margin-left: 4rem;
+        }
+    }
+
+    &__cta {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        margin: 0 auto;
+        margin-top: 7rem;
+
+    }
+
+    &__anim {
+        position: absolute;
+        top: 52%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+    }
+
+
+    &__icon {
+        background-image: url(/img/arrow-white.svg),linear-gradient(to right, transparent, transparent);
+        background-repeat: no-repeat;
+        display: inline-block;
+        width: 1.8rem;
+        height: 1.8rem;
+        margin: 1rem;
+        margin-left: 3rem;
+        transition: all 600ms cubic-bezier(0.165, 0.84, 0.44, 1);
+        z-index: 2;
+
+        @media only screen and (max-width:$bp-900) {
+            width: 1.6rem;
+            height: 1.6rem;
+            margin-left: 1.5rem;
+        }
+
+        @media only screen and (max-width:$bp-600) {
+            background-image: url(/img/arrow-red.svg),linear-gradient(to right, transparent, transparent);
+        }
+        
+    }
+
+    &__social {
+        top: 40%;
+        position: sticky;
+        display: flex;
+        flex-direction: column;
+        z-index: 10;
+        bottom: 10rem;
+        width: 10rem;
+
+        @media only screen and (max-width:$bp-600) {
+            top: 25%;
+        }
+
+        & * {
+            width: 3rem;
+            height: 3rem;
+            margin: 1rem;
+            fill: $color-red;
+        }
+    }  
+}
+
+.btn {
+    
+    &:link,
+    &:visited {
+        font-size: 1.6rem;
+        text-decoration: none;
+
+        text-transform: capitalize;
+        flex: 0 0 45%;
+        line-height: 9.3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        
+
+        
+        @media only screen and (max-width:$bp-1000) {
+            flex: 0 0 34%;
+        }
+
+        @media only screen and (max-width:$bp-900) {
+            font-size: 1.4rem;
+            padding: 0 1rem;
+        }
+
+        @media only screen and (max-width:$bp-600) {
+           
+            line-height: 5rem;
+        }
+    }
+
+
+
+    &:hover .hero__icon {
+        background-image: url(/img/arrow-red.svg),linear-gradient(to right, transparent, transparent);
+        transform-origin: center center;
+        transform: rotate(450deg);
+        margin-top: 1rem;
+        
+    }
+}
+
+.btn--white {
+    &:link,
+    &:visited {
+        background-color: transparent;
+        color: $color-white;
+        transition: background-color .3s;
+        z-index: 2;
+
+        @media only screen and (max-width:$bp-600) {
+            background-color: $color-white;
+            color: $color-red;
+            flex: 0 0 80%;
+        }
+    }
+
+    &:hover {
+        background-color: $color-white;
+        color: $color-red;
+        
+    }
+}
+
+
+
+.btn--red {
+    &:link,
+    &:visited {
+        border: 2px solid $color-red;
+        color: $color-red;
+        transition: all .3s;
+
+        @media only screen and (max-width:$bp-600) {
+            background-color: $color-red;
+            color: $color-white;
+        }
+    }
+
+    &:hover {
+        background-color: $color-red;
+        color: $color-white;
+    }
+}
+  
+  #bm {
+    width: 26rem;
+    
+}
+
+.heading-secondary {
+    font-size: 6rem;
+    font-weight: 600;
+    color: $color-red;
+    text-transform: uppercase;
+
+    @media only screen and (max-width:$bp-1000) {
+        font-size: 5rem;
+    }
+
+    @media only screen and (max-width:$bp-900) {
+        font-size: 4rem;
+    }
+}
+
+.project {
+    
+    margin-top: 20rem;
+
+
+    &__title {
+        margin-left: 4rem;
+        margin-top: -7rem;
+    }
+
+
+    &__frame {
+        width: 50rem;
+
+        @media only screen and (max-width:$bp-1000) {
+            width: 44rem;
+        }
+
+        @media only screen and (max-width:$bp-1000) {
+            width: 44rem;
+        }
+
+        @media only screen and (max-width:$bp-600) {
+            width: 38rem;
+        }
+        
+    }
+
+
+    &__img {
+        height: 36rem;
+        background-size: cover;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        box-shadow: 0px 3px 57px 0px rgba(51, 51, 51, 0.45);
+
+          
+
+        @media only screen and (max-width:$bp-1000) {
+            height: 30rem;
+        }
+
+        @media only screen and (max-width:$bp-600) {
+            height: 27rem;
+        }
+    }
+
+
+    &__desc {
+        margin-top: 15rem;
+        font-size: 1.4rem;
+        color: $color-black;
+        line-height: 2;
+
+        @media only screen and (max-width:$bp-1000) {
+            margin-top: 7rem;
+        }
+
+        @media only screen and (max-width:$bp-900) {
+            font-size: 1.2rem;
+        }
+
+        @media only screen and (max-width:$bp-600) {
+            font-size: 1.4rem;
+        }
+        
+    }
+
+    &__link {
+
+    }
+
+    &__ctas {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 4rem;
+
+        
+    @media only screen and (max-width:$bp-1000) {
+        display: flex;
+        justify-content: space-around;
+     }
+
+    }
+
+}
+
+.contact {
+
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 40%;
+
+    @media only screen and (max-width:$bp-1000) {
+        display: block;
+    }
+
+    & * {
+        background-color: transparent;
+        border: none;
+        padding: 1.5rem 0;
+        border-bottom: 2px solid $color-red;
+        font-family: inherit;
+        color: $color-white;
+        width: 100%;
+        box-sizing: inherit;
+
+        &:focus {
+            outline: none;
+        }
+
+    }
+
+    &__green {
+        border: none;
+        background-color: darkcyan;
+        font-size: 1.4rem;
+        padding: 1.5rem;
+        display: none;
+    }
+
+    &__input {
+
+    }
+
+    &__area {
+  
+    }
+
+    &__btn {
+        background-color: $color-red;
+        color: $color-white;
+        text-decoration: none;
+        font-size: 1.4rem;
+        text-align: center;
+        margin-top: 4rem;
+        cursor: pointer;
+    }
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border-bottom: 2px solid $color-red;
+  -webkit-text-fill-color: $color-white;
+  -webkit-box-shadow: 0 0 0px 1000px transparent inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+.getintouch {
+    margin-right: 4rem;
+    margin-top: 10rem;
+    flex: 0 0 20%;
+    display: flex;
+    flex-direction: column;
+    
+    @media only screen and (max-width:$bp-600) {
+        margin: 5rem 0 2rem;
+    }
+ 
+
+    &__socials {
+        
+        display: flex;
+        justify-content: space-between;
+        
+        
+        
+
+        & * {
+            width: 3rem;
+            height: 3rem;
+            
+            
+        }
+
+        .instagram {
+            background-image: url(/img/instagram-white.svg);
+
+            &:hover {
+                background-image: url(/img/instagram-red.svg);
+            }
+        }
+
+        .github {
+            background-image: url(/img/github-white.svg);
+            
+            
+            
+
+            &:hover {
+                background-image: url(/img/github-red.svg);
+                
+            }
+        }
+
+        .behance {
+            background-image: url(/img/behance-white.svg);
+
+            &:hover {
+                background-image: url(/img/behance-red.svg);
+            }
+        }
+    }
+
+    &__email {
+        text-align: center;
+        margin-top: 3rem;
+        font-size: 1.4rem;
+        color: $color-white;
+        letter-spacing: 1px;
+    }
+}
+
+.top {
+    position: absolute;
+    top: 93%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    img {
+        width: 4rem;
+
+    }
+
+}

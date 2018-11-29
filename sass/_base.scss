@@ -1,0 +1,30 @@
+$color-red: #fd526a;
+$color-black: #333;
+$color-white: #fff;
+$bp-1000: 62.5em;
+$bp-900: 56.25em;
+$bp-600: 37.5em;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+
+    @media only screen and (max-width:$bp-600) {
+        font-size: 50%;
+    }
+}
+
+body {
+    box-sizing: border-box;
+}

@@ -1,0 +1,50 @@
+// color pallet
+
+$color-primary-green: #00cec0;
+$color-primary-green-light: #07baca;
+$color-primary-green-dark: #07b7ab;
+$color-text: #34495e;
+$color-text-dark: #24394e;
+$color-text-hover: #32427d;
+$color-text-hover-dark: #283461;
+$color-grey: #999999;
+$color-white: #fff;
+$color-primary-orang: #f47c54;
+$color-primary-orang-dark: #e5663c;
+$color-primary-orang-hover: #fe4141;
+$color-primary-orang-hover-dark: #f10909;
+
+
+
+$bp-1100: 68.75em;
+$bp-1000: 62.5em;
+$bp-900: 56.25em;
+$bp-600: 37.5em;
+
+// inital
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: .7px;
+
+    @media only screen and (max-width: $bp-600) {
+        font-size: 50%;
+    }
+}
+
+body {
+    box-sizing: border-box;
+}
+
+
