@@ -409,6 +409,10 @@ select:-webkit-autofill:focus {
       background-image: url(/img/behance-white.svg); }
       .getintouch__socials .behance:hover {
         background-image: url(/img/behance-red.svg); }
+    .getintouch__socials .twitter {
+      background-image: url(/img/twitter-white.svg); }
+      .getintouch__socials .twitter:hover {
+        background-image: url(/img/twitter-red.svg); }
   .getintouch__email {
     text-align: center;
     margin-top: 3rem;

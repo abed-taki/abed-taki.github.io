@@ -451,14 +451,9 @@ select:-webkit-autofill:focus {
         display: flex;
         justify-content: space-between;
         
-        
-        
-
         & * {
             width: 3rem;
             height: 3rem;
-            
-            
         }
 
         .instagram {
@@ -472,9 +467,6 @@ select:-webkit-autofill:focus {
         .github {
             background-image: url(/img/github-white.svg);
             
-            
-            
-
             &:hover {
                 background-image: url(/img/github-red.svg);
                 
@@ -486,6 +478,14 @@ select:-webkit-autofill:focus {
 
             &:hover {
                 background-image: url(/img/behance-red.svg);
+            }
+        }
+
+        .twitter {
+            background-image: url(/img/twitter-white.svg);
+
+            &:hover {
+                background-image: url(/img/twitter-red.svg);
             }
         }
     }
